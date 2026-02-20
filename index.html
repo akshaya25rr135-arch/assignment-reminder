@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment Reminder</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Assignment Deadline Reminder</h2>
+
+    <input type="text" id="task" placeholder="Assignment name">
+    <input type="datetime-local" id="time">
+
+    <button onclick="startReminder()">Set Reminder</button>
+</div>
+
+<!-- Reminder Image Popup -->
+<div id="imagePopup" class="popup">
+    <img src="reminder.png" alt="Reminder Image">
+    <p id="popupText"></p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
